@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- Action to open To-do Task list -->
+  <act_window id="action_diets"
+    name="Diets"
+    res_model="diet"
+    view_mode="tree,form" />
+  <!-- Menu item to open To-do Task list -->
+  <menuitem id="menu_diets"
+    name="Diets"
+    action="action_diets" />
+
+    <!-- Action to open To-do Task list -->
+  <act_window id="action_ingredients"
+    name="Ingredients"
+    res_model="ingredient"
+    view_mode="tree,form" />
+  <!-- Menu item to open To-do Task list -->
+  <menuitem id="menu_ingredients"
+    name="Ingredients"
+    action="action_ingredients"
+    parent="menu_diets" />
+
+    <record model="ir.ui.view" id="form">
+      <field name="name">dietapp form</field>
+      <field name="model">ingredient</field>
+      <field name="arch" type="xml">
+        <form>
+          <header>
+            <button name='import_ingredients' string='Import Ingredients' class="btn btn-primary oe_action_button" type="object" />
+          </header>
+          <field name="name"/>
+        </form>
+      </field>
+    </record>
+
+</odoo>
