@@ -8,6 +8,8 @@ class Diet(models.Model):
     _description = "Diet"
 
     name = fields.Text('Name', required=True)
+    creator = fields.Many2one('res.users', string="Creator", default=lambda self: self.env.user.id)
+    assigned_to = fields.Many2many('res.users', 'res_user_id', string="Assigned to")
     type = fields.Many2one('diet.type', string="Type", store=True, readonly=False)
     public = fields.Boolean(string='Public')
     monday_diet_id = fields.Many2one('daily.diet', string="Monday", store=True, readonly=False)

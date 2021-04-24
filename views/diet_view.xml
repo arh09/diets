@@ -8,18 +8,25 @@
       <form string="Diet">
         <sheet>
           <group>
-            <group>
+            <group colspan="0">
                 <field name="name" />
+                <field name="creator" />
+                <field name="assigned_to" />
                 <field name="public" />
                 <field name="type" />
-
-                    <separator/>
+                <separator/>
                 <field name="monday_diet_id" />
+                <separator/>
                 <field name="tuesday_diet_id" />
+                <separator/>
                 <field name="wednesday_diet_id" />
+                <separator/>
                 <field name="thursday_diet_id" />
+                <separator/>
                 <field name="friday_diet_id" />
+                <separator/>
                 <field name="saturday_diet_id" />
+                <separator/>
                 <field name="sunday_diet_id" />
             </group>
           </group>

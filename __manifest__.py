@@ -8,7 +8,7 @@
     'description': "Nutrition and diet",
     'category': 'Nutrition',
     'author': 'Alberto Rubio',
-    'depends': ['base','web'],
+    'depends': ['base'],
     'data': [
         "security/ir.model.access.csv",
         "views/diet_view.xml",
