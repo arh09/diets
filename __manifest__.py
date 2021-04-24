@@ -12,6 +12,8 @@
     'data': [
         "security/ir.model.access.csv",
         "views/diet_view.xml",
+        "views/aliment_view.xml",
+        "views/menu.xml",
         "views/templates.xml",
     ],
     'qweb': [

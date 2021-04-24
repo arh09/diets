@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record model="ir.ui.view" id="aliment_form">
+    <field name="name">aliment.form</field>
+    <field name="model">aliment</field>
+    <field name="arch" type="xml">
+      <form string="Aliment">
+        <sheet>
+          <div class="oe_button_box" name="button_box">
+            <button name='import_aliments' string='Import Aliments'
+                    class="btn btn-primary oe_action_button" type="object" />
+          </div>
+          <group>
+            <field name="name" />
+            <field name="group" />
+            <field name="line_ids" />
+          </group>
+        </sheet>
+
+      </form>
+    </field>
+  </record>
+
+</odoo>

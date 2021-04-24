@@ -1,3 +1,9 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_diet,diet,model_diet,base.group_user,1,1,1,1
-access_ingredient,ingredient,model_ingredient,base.group_user,1,1,1,1
+access_diet_type,diet_type,model_diet_type,base.group_user,1,1,1,1
+access_daily_diet,daily_diet,model_daily_diet,base.group_user,1,1,1,1
+access_meal,meal,model_meal,base.group_user,1,1,1,1
+access_aliment,aliment,model_aliment,base.group_user,1,1,1,1
+access_aliment_line,aliment_line,model_aliment_line,base.group_user,1,1,1,1
+access_aliment_group,aliment_group,model_aliment_group,base.group_user,1,1,1,1
+access_component,component,model_component,base.group_user,1,1,1,1

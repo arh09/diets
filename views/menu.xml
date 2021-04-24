@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <act_window id="action_root"
+        name="Diets"
+        res_model="diet"
+        view_mode="tree,form" />
+    <menuitem id="menu_root"
+        name="Diets"
+        action="action_root" />
+
+    <menuitem id="menu_diet"
+        name="Diets"
+        action="action_root"
+        sequence="0"
+        parent="menu_root" />
+
+    <act_window id="action_daily_diet"
+        name="Daily Diets"
+        res_model="daily.diet"
+        view_mode="tree,form" />
+    <menuitem id="menu_daily_diet"
+        name="Daily Diets"
+        action="action_daily_diet"
+        sequence="10"
+        parent="menu_root" />
+
+    <act_window id="action_meal"
+        name="Meals"
+        res_model="meal"
+        view_mode="tree,form" />
+    <menuitem id="menu_meal"
+        name="Meals"
+        action="action_meal"
+        sequence="20"
+        parent="menu_root" />
+
+    <act_window id="action_aliments"
+        name="Aliments"
+        res_model="aliment"
+        view_mode="tree,form" />
+    <menuitem id="menu_aliments"
+        name="Aliments"
+        action="action_aliments"
+        sequence="30"
+        parent="menu_root" />
+
+    <act_window id="action_components"
+        name="Components"
+        res_model="component"
+        view_mode="tree,form" />
+    <menuitem id="menu_components"
+        name="Components"
+        action="action_components"
+        sequence="40"
+        parent="menu_root" />
+
+    <menuitem id="menu_settings"
+        name="Settings"
+        sequence="50"
+        parent="menu_root" />
+
+    <act_window id="action_diet_types"
+        name="Diet Types"
+        res_model="diet.type"
+        view_mode="tree,form" />
+    <menuitem id="menu_diet_type"
+        name="Diet Types"
+        action="action_diet_types"
+        sequence="51"
+        parent="menu_settings" />
+
+    <act_window id="action_aliment_group"
+        name="Aliment Groups"
+        res_model="aliment.group"
+        view_mode="tree,form" />
+    <menuitem id="menu_aliment_group"
+        name="Aliment Groups"
+        action="action_aliment_group"
+        sequence="51"
+        parent="menu_settings" />
+
+</odoo>
